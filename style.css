@@ -1,0 +1,273 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ===========commnont */
+a {
+  text-decoration: none;
+  position: relative;
+  color: currentColor;
+}
+.btn {
+  display: inline-block;
+  padding: 0 6px;
+  min-width: 118px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background-color: #171100;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.main-content {
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.break-all {
+  word-break: break-all;
+}
+
+/* Header styles */
+/* Header styles */
+.header {
+  background: #fff;
+}
+.header.fixed {
+  z-index: 1;
+  position: sticky;
+  top: -10px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.header img.logo {
+  width: 40px;
+  height: 36.847px;
+  flex-shrink: 0;
+}
+.header .logo-desc {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #171100;
+}
+.nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.nav li a {
+  display: inline-block;
+  color: #171100;
+  padding: 8px 12px;
+  line-height: 1;
+}
+.nav li.active a {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px; /* Underline width */
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+.nav a:hover {
+  color: #171100;
+  font-weight: 600;
+}
+.header .btn-sign-up {
+  display: inline-block;
+  min-width: 144px;
+  margin-left: 16px; /* Adjust spacing */
+  padding: 0 12px;
+}
+/* ===============hero================== */
+.hero .body {
+  display: flex;
+}
+.hero .content-block {
+  margin-top: 100px;
+}
+.hero .title {
+  color: #1a1a1a;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.716px;
+  text-transform: uppercase; /* Chuyển văn bản sang viết hoa */
+  width: 327px;
+  font-family: "Oswald", sans-serif;
+}
+
+.hero .desc {
+  margin-top: 22px;
+  color: #1a1a1a;
+  font-size: 17.326px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 25.988px */
+  letter-spacing: 0.866px;
+  width: 369px;
+  position: relative;
+}
+.hero .desc::before {
+  content: "";
+  display: inline-block; /* Hiển thị như một khối inline */
+  background: #1a1a1a;
+  position: absolute;
+  width: 0.722px;
+  height: 62.083px;
+  left: -10px; /* Căn chỉnh dấu phân cách so với .desc */
+  top: 0;
+}
+.hero .btn {
+  margin-top: 54px;
+}
+.hero .btn.start {
+  border-radius: 0px;
+  background: #ff5202;
+  margin-right: 84px;
+}
+.hero .btn.learn {
+  border-radius: 0px;
+  background: #f6f6f6;
+  margin-right: 84px;
+  border: 0.722px solid #1a1a1a;
+}
+.hero .media-block {
+  margin-top: 43px;
+  margin-left: 400px;
+}
+.hero .btn.learn p {
+  color: #1a1a1a;
+}
+.item {
+  width: 48px;
+  height: 33px;
+  display: flex;
+  gap: 26px;
+  margin-top: 40px;
+  margin-left: 183px;
+}
+.img .icon {
+  width: 17px;
+  height: 17px;
+}
+/* ====================== */
+.why-we-are-best {
+  width: 100%;
+  background: #262543;
+  margin-top: 45px;
+}
+
+.why-we-are-best .body {
+  padding: 50px 120px;
+  text-align: left;
+  display: flex;
+}
+
+.why-we-are-best .tilte {
+  color: #fff;
+  font-size: 2.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.462px;
+  margin-bottom: 20px;
+  width: 195px;
+}
+
+.why-we-are-best .desc {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7; /* Tỷ lệ dòng giúp dễ đọc */
+  letter-spacing: 0.231px;
+  margin-bottom: 10px;
+  width: 329px;
+}
+.why-we-are-best .why-we-are-best-features {
+  margin-left: 117px;
+  display: flex;
+  gap: 271px;
+}
+.why-we-are-best .features .title {
+  color: #fff;
+  font-size: 15.882px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.254px;
+  margin-top: 24px;
+}
+.why-we-are-best .features .description {
+  color: #fff;
+  font-size: 11.55px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 153%; /* 17.672px */
+  letter-spacing: 0.185px;
+  margin-top: 10px;
+  width: 137.16px;
+  height: 30.791px;
+  font-family: "Nunito Sans", sans-serif;
+}
