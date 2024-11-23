@@ -1,3 +1,6 @@
+/* LE DUONG HUY đã có góp những công sức trong này */
+
+
 body {
   line-height: 1.6;
   margin: 0;
@@ -135,4 +138,177 @@ h2 {
 .view-item button:hover {
   background-color: #00b894;
   color: #fff;
+}
+
+/* chỉnh cho cái nút mũi tến ở góc trên */
+/* Chỉnh sửa container chứa đoạn văn và nút */
+.container_circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+/* Đặt lại style cho đoạn văn */
+.container_circle_button p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Nhóm các nút điều hướng */
+.navigation-buttons {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Style cho nút tròn */
+.circle_button {
+  background-color: transparent;
+  color: #009174;
+  border: 1px solid #009174;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  line-height: 20px;     /* Điều chỉnh vị trí dấu mũi tên lên trên */
+  padding-bottom: 5px;   /* Thêm padding bottom để cân bằng */
+}
+
+.circle_button:hover {
+  background-color: #00b894;
+}
+
+/* Thêm style riêng cho ảnh topic */
+.body__list img[src*="Topic"] {
+  width: 100%;      /* Chiều rộng 100% của container */
+  height: auto;     /* Chiều cao tự động điều chỉnh để giữ tỷ lệ */
+  max-width: 400px; /* Giới hạn kích thước tối đa */
+  margin: 0;        /* Bỏ margin để ảnh chiếm hết không gian */
+}
+
+/* Điều chỉnh container cho ảnh topic */
+
+.body__lists:last-child .body__list {
+  padding: 0;       /* Bỏ padding để ảnh chiếm toàn bộ space */
+  overflow: hidden; /* Ẩn phần thừa nếu ảnh quá lớn */
+}
+
+/* Chỉnh sửa grid layout cho phần topic */
+.main__lists:last-child .body__lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+  gap: 2rem; /* Khoảng cách giữa các ảnh */
+  margin-top: 2rem;
+}
+
+/* Điều chỉnh kích thước ảnh topic */
+.body__list img[src*="Topic"] {
+  width: 100%;
+  height: 250px; /* Điều chỉnh chiều cao cố định */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  border-radius: 8px; /* Bo góc cho ảnh */
+}
+
+/* Điều chỉnh container cho topic */
+.main__lists:last-child .body__list {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Điều chỉnh màu cho dấu chấm của ul */
+.custom-list li {
+  list-style-type: none; /* Loại bỏ dấu chấm mặc định */
+}
+
+.custom-list li::before {
+  content: '•'; /* Thêm ký hiệu chấm đen */
+  color: #00b894; /* Đặt màu cho dấu chấm */
+  font-weight: bold; /* Đặt độ đậm cho dấu chấm */
+  display: inline-block;
+  width: 1em; /* Đặt khoảng cách từ dấu chấm tới nội dung */
+  margin-left: -1em; /* Đặt vị trí của dấu chấm */
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #009174;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  }
+  
+button:hover {
+  background-color: #00b894;
+  color: #fff;
+}
+
+/* Chỉnh vị trí và style cho ul trong topic cards */
+.body__list .custom-list {
+  text-align: left;          /* Căn trái cho nội dung ul */
+  padding: 1rem;             /* Thêm padding */
+  margin: 1rem 0;           /* Thêm margin trên dưới */
+}
+
+/* Chỉnh style cho li trong custom-list */
+.custom-list li {
+  font-size: 1.4rem;        /* Kích thước chữ */
+  color: #6b6b6b;           /* Màu chữ */
+  padding-left: 1.5rem;     /* Tạo khoảng cách cho dấu chấm */
+  position: relative;       /* Để định vị dấu chấm */
+}
+
+/* Chỉnh lại vị trí dấu chấm */
+.custom-list li::before {
+  position: absolute;       /* Định vị tuyệt đối */
+  left: 15px;                 /* Đặt dấu chấm sát lề trái */
+  top: 50%;                /* Căn giữa theo chiều dọc */
+  transform: translateY(-50%); /* Căn chính xác giữa */
+}
+
+/* Chỉnh style cho hr */
+.body__list hr {
+  margin: 0.5rem 1rem;     /* Thêm margin cho đường kẻ */
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.big-space {
+  height: 500px;
+  width: 100%;
+}
+
+/* Chỉnh phần phát biểu*/
+.profile-container {
+  background-color: #562b0c;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove auto margin */
+  padding: 40px 0; /* Add vertical padding */
+}
+
+/* Keep original image styles */
+.profile-container img {
+  margin-right: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px;
+  background-color: #562b0cb4;
+}
+
+.profile-container p {
+  color: #ffffffce;
 }
