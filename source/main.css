@@ -312,3 +312,144 @@ button:hover {
 .profile-container p {
   color: #ffffffce;
 }
+
+/* ------- nguyen nhat king ------- */
+.button_style_1 {
+  background-color:rgb(17, 17, 17);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 0px 10px;
+}
+
+.button_style_1:hover {
+  background-color:rgb(36, 36, 36);
+}
+
+.button_style_1:active {
+  background-color:rgb(52, 52, 52);
+}
+
+.button_style_1_modifies {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #2d3436;
+  color: black;
+}
+
+.button_style_1_modifies:hover {
+  background-color: rgba(17, 17, 17, 0.8);
+}
+
+.button_style_1_modifies:active {
+  background-color: rgba(17, 17, 17, 0.9);
+}
+
+.button_style_2 {
+  background-color:rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.button_style_2:hover {
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+.button_style_2:active {
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+.page3 button img {
+  width: 16px;
+  height: 16px;
+  padding: 0px 2px 0px 2px;
+}
+
+.page3-title {
+  position: relative;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  height: 60vh;
+  padding: 10px;
+}
+
+.page3-title h1 {
+  margin: 0px;
+  font-size: 36px;
+  color: rgb(17, 17, 17);
+}
+
+.page3-title hr {
+  border: none;
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.element-align-center-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.element-align-top-left {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+
+}
+
+.element-align-top-right {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+}
+
+.element-align-bottom-left {
+  position: absolute;
+  bottom: 4%;
+  left: 2%;
+
+}
+
+.element-align-bottom-right {
+  position: absolute;
+  bottom: 4%;
+  right: 2%;
+}
+
+.script_content_style {
+  padding: 2% 2%;
+  width: 100%;
+}
+
+.script_content_style p {
+  color: black;
+  width: 100%;
+}
+
+.script_content_style strong {
+  color: black;
+  width: 100%;
+}
+
+.options {
+  position: relative;
+  width: 100%;
+  height: 14vh;
+}
+
+.options div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+/* ------- nguyen nhat king ------- */
+
