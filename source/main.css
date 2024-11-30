@@ -282,7 +282,7 @@ button:hover {
 }
 
 .big-space {
-  height: 500px;
+  height: 100px;
   width: 100%;
 }
 
@@ -311,4 +311,107 @@ button:hover {
 
 .profile-container p {
   color: #ffffffce;
+}
+
+/* Chỉnh cho phần 📜 Licence Agreement */
+
+.Licence_Agreement{
+  max-width: 90rem;
+  margin: 4rem auto 0;
+  padding: 12rem 1rem;
+  text-align: center;
+  /* border: 2px solid #009174; Thêm khung */
+  border-radius: 10px; /* Bo góc cho khung */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Licence_Agreement h1 {
+  font-size: 3.5rem;
+  color: #000000c4;
+  margin-bottom: 1rem;
+}
+
+.Licence_Agreement h2 {
+  font-size: 2rem;
+  color: #000000c4;
+  margin-bottom: 1rem;
+}
+
+.Licence_Agreement p {
+  font-size: 2rem;
+  color:  #6b6b6b;
+  margin-top: 1rem;
+}
+/* Chỉnh cho phần social media */
+
+.Social_media{
+  max-width: 90rem;
+  margin: 4rem auto 0;
+  padding: 10rem 1rem;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr); /* Thay đổi thành 2 cột */
+  /* border: 2px solid #009174; Thêm khung */
+  border-radius: 10px; /* Bo góc cho khung */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Social_media img {
+  width : 120px;
+  border-radius: 50%;
+}
+
+.Social_media h1 {
+  font-size: 3.5rem;
+  color: #000000c4;
+  margin-bottom: 1rem;
+}
+
+.Social_media p {
+  font-size: 2.5rem;
+  color: #6b6b6b;
+  margin-bottom: 1rem;
+}
+
+.Link_social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  /* padding: 0.5rem; */
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Link_social_media button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;  /* Khoảng cách giữa icon và text */
+  background: transparent;
+  border: none;
+  padding: 4rem 3.5rem; /* Kích thước nút */
+  cursor: pointer;
+  transition: transform 0.3s ease;   /*Hiệu ứng chuyển động mượt 0.3s */
+  width: 100%;
+}
+
+.Link_social_media button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Link_social_media button img {
+  width: 55px;
+  border-radius: 0;
+}
+
+.Link_social_media button span {
+  font-size: 2rem;  /* Kích thước chữ */
+  color: #6b6b6b;
+  text-align: left;
 }
