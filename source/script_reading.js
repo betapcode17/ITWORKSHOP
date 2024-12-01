@@ -17,6 +17,3 @@ function textToHTML(text) {
     }).join('');
     return html;
 }
-
-
-
