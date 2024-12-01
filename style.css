@@ -58,11 +58,15 @@ a {
 .break-all {
   word-break: break-all;
 }
-
+li {
+  margin-top: 10px;
+  color: wheat;
+}
 /* Header styles */
 /* Header styles */
 .header {
   background: #fff;
+  height: 73px;
 }
 .header.fixed {
   z-index: 1;
@@ -193,6 +197,7 @@ a {
   background: #f6f6f6;
   margin-right: 84px;
   border: 0.722px solid #1a1a1a;
+  color: black;
 }
 .hero .media-block {
   margin-top: 43px;
@@ -270,4 +275,738 @@ a {
   width: 137.16px;
   height: 30.791px;
   font-family: "Nunito Sans", sans-serif;
+}
+/* =================================topic */
+/* 
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  color: #333;
+} */
+
+.main__lists {
+  max-width: 130rem;
+  margin: 40px auto;
+  padding: 1rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #0b132a;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 142.857% */
+}
+
+p {
+  font-size: 1.6rem;
+  color: #6b6b6b;
+  margin-top: 1rem;
+}
+
+.body__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.body__list {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.body__list:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.body__list img {
+  margin-bottom: 1rem;
+  width: 217.628px;
+  height: 165.961px;
+}
+
+.body__list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0b132a;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 104.167% */
+}
+
+.body__list p {
+  font-size: 1.4rem;
+  color: #6b6b6b;
+}
+
+h2 {
+  margin-top: 3rem;
+  color: #0b132a;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 142.857% */
+}
+.general-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+/* view-layout*/
+.view-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem;
+}
+/* PC, tablet*/
+@media (min-width: 740px) {
+  .view-layout {
+    flex-direction: row;
+  }
+}
+.view-item {
+  background-color: #f7f8fa;
+  border: 1px solid #00b894;
+  border-radius: 1.5rem;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.view-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.view-item img:nth-child(2) img:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.view-item h2 {
+  font-size: 18px;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.view-item button {
+  background-color: transparent;
+  border: 1px solid #00b894;
+  border-radius: 5px;
+  color: #00b894;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-item button:hover {
+  background-color: #00b894;
+  color: #fff;
+}
+
+/* chỉnh cho cái nút mũi tến ở góc trên */
+/* Chỉnh sửa container chứa đoạn văn và nút */
+.container_circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+/* Đặt lại style cho đoạn văn */
+.container_circle_button p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Nhóm các nút điều hướng */
+.navigation-buttons {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Style cho nút tròn */
+.circle_button {
+  background-color: transparent;
+  color: #009174;
+  border: 1px solid #009174;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  line-height: 20px; /* Điều chỉnh vị trí dấu mũi tên lên trên */
+  padding-bottom: 5px; /* Thêm padding bottom để cân bằng */
+}
+
+.circle_button:hover {
+  background-color: #00b894;
+}
+
+/* Thêm style riêng cho ảnh topic */
+.body__list img[src*="Topic"] {
+  width: 100%; /* Chiều rộng 100% của container */
+  height: auto; /* Chiều cao tự động điều chỉnh để giữ tỷ lệ */
+  max-width: 400px; /* Giới hạn kích thước tối đa */
+  margin: 0; /* Bỏ margin để ảnh chiếm hết không gian */
+}
+
+/* Điều chỉnh container cho ảnh topic */
+
+.body__lists:last-child .body__list {
+  padding: 0; /* Bỏ padding để ảnh chiếm toàn bộ space */
+  overflow: hidden; /* Ẩn phần thừa nếu ảnh quá lớn */
+}
+
+/* Chỉnh sửa grid layout cho phần topic */
+.main__lists:last-child .body__lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+  gap: 2rem; /* Khoảng cách giữa các ảnh */
+  margin-top: 2rem;
+}
+
+/* Điều chỉnh kích thước ảnh topic */
+.body__list img[src*="Topic"] {
+  width: 100%;
+  height: 250px; /* Điều chỉnh chiều cao cố định */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  border-radius: 8px; /* Bo góc cho ảnh */
+}
+
+/* Điều chỉnh container cho topic */
+.main__lists:last-child .body__list {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Điều chỉnh màu cho dấu chấm của ul */
+.custom-list li {
+  list-style-type: none; /* Loại bỏ dấu chấm mặc định */
+}
+
+.custom-list li::before {
+  content: "•"; /* Thêm ký hiệu chấm đen */
+  color: #00b894; /* Đặt màu cho dấu chấm */
+  font-weight: bold; /* Đặt độ đậm cho dấu chấm */
+  display: inline-block;
+  width: 1em; /* Đặt khoảng cách từ dấu chấm tới nội dung */
+  margin-left: -1em; /* Đặt vị trí của dấu chấm */
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #009174;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #00b894;
+  color: #fff;
+}
+
+/* Chỉnh vị trí và style cho ul trong topic cards */
+.body__list .custom-list {
+  text-align: left; /* Căn trái cho nội dung ul */
+  padding: 1rem; /* Thêm padding */
+  margin: 1rem 0; /* Thêm margin trên dưới */
+}
+
+/* Chỉnh style cho li trong custom-list */
+.custom-list li {
+  font-size: 1.4rem; /* Kích thước chữ */
+  color: #6b6b6b; /* Màu chữ */
+  padding-left: 1.5rem; /* Tạo khoảng cách cho dấu chấm */
+  position: relative; /* Để định vị dấu chấm */
+}
+
+/* Chỉnh lại vị trí dấu chấm */
+.custom-list li::before {
+  position: absolute; /* Định vị tuyệt đối */
+  left: 15px; /* Đặt dấu chấm sát lề trái */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  transform: translateY(-50%); /* Căn chính xác giữa */
+}
+
+/* Chỉnh style cho hr */
+.body__list hr {
+  margin: 0.5rem 1rem; /* Thêm margin cho đường kẻ */
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.big-space {
+  height: 500px;
+  width: 100%;
+}
+
+/* Chỉnh phần phát biểu*/
+.profile-container {
+  background-color: #562b0c;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove auto margin */
+  padding: 40px 0; /* Add vertical padding */
+}
+
+/* Keep original image styles */
+.profile-container img {
+  margin-right: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px;
+  background-color: #562b0cb4;
+}
+
+.profile-container p {
+  color: #ffffffce;
+}
+/* =============================================== */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.popular-top .info {
+  margin-left: 100px;
+}
+.custom-list:after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: #ccc; /* Màu sắc của thanh ngang */
+  margin-top: 10px; /* Khoảng cách từ nội dung đến thanh ngang */
+  margin-bottom: 12px;
+}
+.popular .info .tilte {
+  color: #0d1700;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .control-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.popular .course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.popular .course-item {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+  border-radius: 12px 12px 0px 0px;
+  height: 278px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+
+.popular .course-item .foot,
+.popular .course-item .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.popular .rating .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.popular .course-item .foot {
+  margin-top: 30px;
+}
+
+.popular .course-item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .course-item .btn-book {
+  border: none;
+}
+
+.popular .course-item .btn-book:hover {
+  background: var(--primary-color);
+}
+.popular .course-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.popular-top .control-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+/* =============== */
+.button_style_1 {
+  border-radius: 24.5px;
+  background: #171100;
+  width: 285.86px;
+  height: 63.522px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 87.5% */
+  border-radius: 1px solid #000000;
+}
+.AI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.AI .element-align-center-center {
+  width: 500px;
+  height: 500px;
+}
+.AI .Detail {
+  width: 400px;
+  height: 500px;
+  background-color: #009174;
+}
+.Detail .tilte {
+  margin: 0px;
+  font-size: 36px;
+  color: #130606;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.96px;
+}
+.button_style_1:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.button_style_1:active {
+  background-color: rgb(52, 52, 52);
+}
+
+.button_style_1_modifies {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #2d3436;
+  color: black;
+  margin-left: 40px;
+  border-radius: 1px solid #000000;
+}
+
+.button_style_1_modifies:hover {
+  background-color: rgba(17, 17, 17, 0.8);
+}
+
+.button_style_1_modifies:active {
+  background-color: rgba(17, 17, 17, 0.9);
+}
+
+.button_style_2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.button_style_2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button_style_2:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page3 button img {
+  width: 16px;
+  height: 16px;
+  padding: 0px 2px 0px 2px;
+}
+
+.page3-title {
+  position: relative;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  height: 60vh;
+  padding: 10px;
+}
+
+.page3-title h1 {
+  margin: 0px;
+  font-size: 36px;
+  color: #130606;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 100% */
+  letter-spacing: -0.96px;
+}
+
+.page3-title hr {
+  border: none;
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 20px auto;
+}
+/* 
+.element-align-center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.element-align-center-right {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(0%, -50%);
+}
+
+.element-align-center-left {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0%, -50%);
+}
+
+.element-align-top-left {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+}
+
+.element-align-top-right {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+}
+
+.element-align-bottom-left {
+  position: absolute;
+  bottom: 4%;
+  left: 2%;
+}
+
+.element-align-bottom-right {
+  position: absolute;
+  bottom: 4%;
+  right: 2%;
+}
+
+.script_content_style {
+  padding: 2% 2%;
+  width: 100%;
+}
+
+.script_content_style p {
+  color: black;
+  width: 100%;
+}
+
+.script_content_style strong {
+  color: black;
+  width: 100%;
+}
+
+.options {
+  position: relative;
+  width: 100%;
+  height: 14vh;
+}
+
+.options div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ==============feedback======================= */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.feedback-item .dots {
+  gap: 6px;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
 }
