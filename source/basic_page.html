@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Conversation List</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #fff;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #666;
+    }
+
+    .container {
+        display: flex;
+        gap: 50px;
+    }
+
+    .column {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .column li {
+        margin-bottom: 10px;
+    }
+
+    .column li a {
+        text-decoration: none;
+        color: #007BFF;
+        font-size: 18px;
+    }
+
+    .column li img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    .back-button {
+        display: inline-block; 
+        padding: 10px 20px;
+        background-color: #4CAF50; 
+        color: white; 
+        text-decoration: none; 
+        border-radius: 5px; 
+        transition: background-color 0.3s ease; 
+        font-weight: bold;
+    }
+
+    .back-button:hover {
+        background-color: #45a049; 
+    }
+
+    .back-button:active {
+        background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+    <a class="back-button" href="javascript:history.back()">Back</a>
+    <h1>BASIC</h1>
+    <p>Choose a following conversation to practice Speaking.</p>
+    <div class="container">
+        <ul class="column">
+            <li><a href="#">Greetings to New Friends at University</a></li>
+            <li><a href="#">Register a Course at University</a></li>
+            <li><a href="#">Attend a Orientation</a></li>
+            <li><a href="#">Book a Taxi</a></li>
+            <li><a href="#">Buy Train Ticket</a></li>
+            <li><a href="#">Say Hello to New Neighbors</a></li>
+            <li><a href="#">Introduce your Family</a></li>
+            <li><a href="#">What’s your Family Name?</a></li>
+            <li><a href="#">Invite Friend to Drop by your Home</a></li>
+        </ul>
+        <ul class="column">
+            <li><a href="#">At a Party</a></li>
+            <li><a href="#">Ask a Friend for a Night Out</a></li>
+            <li><a href="#">Make an Appointment</a></li>
+            <li><a href="#">Make a Future Plan</a></li>
+            <li><a href="#">Break the Ice</a></li>
+            <li><a href="#">Daily Schedule</a></li>
+            <li><a href="#">A Day at School</a> <img src="https://via.placeholder.com/20" alt="Icon"></li>
+            <li><a href="#">College Life</a></li>
+            <li><a href="#">Apartment Rental</a></li>
+        </ul>
+    </div>
+</body>
+</html>
