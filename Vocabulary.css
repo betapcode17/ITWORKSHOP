@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  color: #000000cb;
+}
+
+.Idoms_Vocabulary {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Idoms_Vocabulary h1 {
+  text-align: left;
+  font-size: 70px;
+  font-weight: 50;
+}
+
+.Idoms_Vocabulary p {
+  font-size: 20px;
+  color: #000000ce;
+  margin-top: 0.4rem;
+  text-align: left;
+}
+
+.Idoms_Vocabulary ul {
+  font-size: 20px;
+  color: #000000ce;
+  margin-top: 0.6rem;
+  text-align: left;
+}
+
+.Idoms_Vocabulary li {
+  margin-top: 2rem;
+}
+
+.Idoms_Vocabulary button {
+  font-size: 20px;
+  margin: 3rem;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+
+.Idoms_Vocabulary button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Idoms_Vocabulary button + button {
+  margin-left: 5rem;
+}
+
+.big-space {
+  height: 100px;
+  width: 100%;
+}
